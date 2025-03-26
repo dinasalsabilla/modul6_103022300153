@@ -41,6 +41,11 @@
             Console.WriteLine("Title: " + this.title);
             Console.WriteLine("Play Count: " + this.playCount);
         }
+
+        internal int GetVideoPlayCount()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     class SayaTubeUser
@@ -112,7 +117,7 @@
                 SayaTubeVideo video = new SayaTubeVideo("Tutorial Design By Contract - [Dina Salsabillla]");
                 for (int i = 0; i < 100; i++)
                 {
-                    video.IncreasePlayCount(10000000);
+                    video.IncreasePlayCount(25000000);
                 }
                 video.PrintVideoDetails();
             }
